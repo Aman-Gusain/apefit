@@ -7,10 +7,12 @@ section#about {
 header .container {
    padding: 0px 0px 0px 0px;
    width: 95% !important;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
 }
 .ico {
    color: gray;
-   padding-right: 2rem;
+   padding-right: 1rem;
 }
 .ico:hover {
    color: #f1574b;
@@ -177,7 +179,7 @@ header {
    left: 0;
    width: 100%;
    padding: 0.5rem 0;
-   background: transparent;
+   background: white;
    z-index: 1000;
    will-change: transform;
    transition: background 0.3s,
@@ -189,7 +191,6 @@ header {
       -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
    transform: translateY(0);
    -webkit-transform: translateY(0);
-   height: 6rem;
 }
 
 header nav .logo {
@@ -242,6 +243,7 @@ header nav ul li a {
    .ico {
       position: absolute;
       top: 1rem;
+      right: 1px;
    }
 }
 .hide-nav {
@@ -349,5 +351,7 @@ ul.menu-left.collapse {
       position: absolute;
       top: 2rem;
       right: 2rem;
+   }
+   .ico {
    }
 }
