@@ -3,3 +3,8 @@
    padding-left: 4rem;
    padding-right: 4rem; */
 }
+html,
+body {
+   font-family: "Roboto Condensed", sans-serif;
+   font-size: 10px;
+}

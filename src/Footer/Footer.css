@@ -2,6 +2,7 @@
    background: #f8fafc;
    border-top: 1px solid #e0e4f6;
    padding-top: 5rem;
+   font-size: 3rem;
 }
 .footer-wrap .container {
    width: 95% !important;
@@ -23,14 +24,14 @@
 }
 .f-menu-list .f-menu h3 {
    color: #373d54;
-   font-size: 16px;
+   font-size: 2.2rem;
    font-weight: 500;
    margin-bottom: 15px;
    text-transform: uppercase;
 }
 .f-menu-list .f-menu ul li a {
    color: #616161;
-   font-size: 14px;
+   font-size: 2rem;
    font-weight: 300;
    padding: 5px 0;
 }
@@ -54,10 +55,10 @@
    color: #3a89cf;
 }
 .f-subscribe {
-   float: left;
-   width: 25%;
-   padding: 0 15px;
-   margin: 0 0 10px;
+   float: right;
+   width: 20%;
+   padding-right: 10px;
+   margin-right: 10px;
 }
 .f-subscribe h3 {
    color: #373d54;
@@ -102,7 +103,7 @@
    padding: 7px 17px 8px;
    transition: all 0.2s;
    color: #fff;
-   height: 35px;
+   height: 100%;
    display: block;
    position: absolute;
    top: 0;

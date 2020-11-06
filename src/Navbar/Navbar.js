@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import Landingpage from "../Components/Landingpage/Landingpage";
+import Shop from "../Components/Shop/Shop";
 
 const Navbar = () => {
    useEffect(() => {
@@ -82,8 +83,46 @@ const Navbar = () => {
                      <span></span>
                   </a>
                   <ul className="menu-left">
-                     <li>
-                        <NavLink to="/about">SHOP</NavLink>
+                     <li className="shop">
+                        <NavLink to="/shop">SHOP</NavLink>
+                        <div class="dropdown-content">
+                           <table>
+                              <td>
+                                 <a href="#">Link 1</a>
+                                 <a href="#">Link 2</a>
+                                 <a href="#">Link 3</a>
+                                 <a href="#">Link 1</a>
+                                 <a href="#">Link 2</a>
+                                 <a href="#">Link 3</a>
+                              </td>
+                              <td>
+                                 <a href="#">Link 1</a>
+                                 <a href="#">Link 2</a>
+                                 <a href="#">Link 3</a>
+                                 <a href="#">Link 1</a>
+                                 <a href="#">Link 2</a>
+                                 <a href="#">Link 3</a>
+                              </td>
+                              <td>
+                                 <a href="#">Link 1</a>
+                                 <a href="#">Link 2</a>
+                                 <a href="#">Link 3</a>
+                                 <a href="#">Link 1</a>
+                                 <a href="#">Link 2</a>
+                                 <a href="#">Link 3</a>
+                              </td>
+                              <td>
+                                 <img
+                                    src="https://images.unsplash.com/photo-1601116780183-d2e80a0bd47f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                                    alt=""
+                                 />
+                                 <img
+                                    src="https://images.unsplash.com/photo-1604335788369-94f349ae5243?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                    alt=""
+                                 />
+                              </td>
+                           </table>
+                        </div>
                      </li>
                      <li>
                         <NavLink to="/work">LEARN</NavLink>
@@ -105,6 +144,7 @@ const Navbar = () => {
             </div>
          </header>
          <Route path="/" exact component={Landingpage} />
+         <Route path="/shop" exact component={Shop} />
       </div>
    );
 };

@@ -1,0 +1,11 @@
+.end {
+   margin: 20rem;
+}
+.end h1 {
+   font-size: 5rem;
+   text-align: center;
+}
+.end button {
+   margin-left: 38%;
+   margin-top: 5rem;
+}

@@ -10,8 +10,40 @@ header .container {
    padding-top: 1rem;
    padding-bottom: 1rem;
 }
+.dropdown-content {
+   transition: 400ms;
+   display: none;
+   width: 70%;
+   background-color: aliceblue;
+   position: absolute;
+   z-index: 100;
+}
+.dropdown-content img {
+   width: 100%;
+   margin: auto;
+}
+.dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   font-size: 4rem;
+   float: none;
+   width: 35%;
+   margin: auto;
+   text-decoration: none;
+   display: block !important;
+}
+
+.dropdown-content td {
+   width: 20%;
+}
+.dropdown-content img {
+   padding: 1rem;
+}
+.shop:hover .dropdown-content {
+   display: block;
+}
 .ico {
-   color: gray;
+   color: #333333;
    padding-right: 1rem;
 }
 .ico:hover {
@@ -94,7 +126,7 @@ header .container {
    text-decoration: none;
    font-family: "Roboto", sans-serif;
    font-size: 5rem;
-   color: black;
+   color: #333333;
 }
 .menu-left a:hover,
 .menu-left a :focus {
@@ -173,13 +205,12 @@ header .container {
 
 header {
    position: fixed;
-   overflow-x: hidden;
 
    top: 0;
    left: 0;
    width: 100%;
    padding: 0.5rem 0;
-   background: white;
+   background: transparent;
    z-index: 1000;
    will-change: transform;
    transition: background 0.3s,
